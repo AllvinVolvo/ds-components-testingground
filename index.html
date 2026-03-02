@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Banner Component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Responsive Banner - Image Left -->
+        <section class="demo-section">
+            <h2>Banner - Image Left (Vertical on sm, Horizontal on md+)</h2>
+            <div class="media-banner media-banner--image-left">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Amazing Discovery</h3>
+                    <p class="media-banner__subtitle">Unveiling possibilities</p>
+                    <p class="media-banner__body">Experience the future of design and development. Our innovative solutions bring your ideas to life with cutting-edge technology and creative excellence.</p>
+                    <button class="media-banner__button">Explore Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Banner - Image Right -->
+        <section class="demo-section">
+            <h2>Banner - Image Right (Vertical on sm, Horizontal on md+)</h2>
+            <div class="media-banner media-banner--image-right">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Transform Your Vision</h3>
+                    <p class="media-banner__subtitle">Create with confidence</p>
+                    <p class="media-banner__body">Build beautiful, responsive experiences that engage your audience. Our platform provides the tools and flexibility you need to create stunning digital products.</p>
+                    <button class="media-banner__button">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aspect Ratio Variants -->
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 4:3</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="4:3">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 4:3</h3>
+                    <p class="media-banner__subtitle">Classic aspect ratio</p>
+                    <p class="media-banner__body">This banner uses a 4:3 aspect ratio, maintaining a balanced composition that works well for most content types.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 3:2</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="3:2">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 3:2</h3>
+                    <p class="media-banner__subtitle">Photography standard</p>
+                    <p class="media-banner__body">The 3:2 ratio is commonly used in photography and provides a flexible composition for diverse visual content.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 1:1</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="1:1">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 1:1</h3>
+                    <p class="media-banner__subtitle">Perfect square</p>
+                    <p class="media-banner__body">Square images create a sense of balance and symmetry, ideal for social media and centered compositions.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 4:5</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="4:5">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 4:5</h3>
+                    <p class="media-banner__subtitle">Portrait oriented</p>
+                    <p class="media-banner__body">The 4:5 ratio favors vertical compositions, perfect for portraiture and mobile-first designs.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 2:3</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="2:3">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 2:3</h3>
+                    <p class="media-banner__subtitle">Enhanced portrait</p>
+                    <p class="media-banner__body">A taller portrait ratio that emphasizes vertical elements and creates a dramatic visual impact.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 9:16</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="9:16">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 9:16</h3>
+                    <p class="media-banner__subtitle">Ultra-tall portrait</p>
+                    <p class="media-banner__body">The 9:16 ratio is extremely vertical, resembling smartphone screens and full-height designs.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Aspect Ratio Variant - 16:9</h2>
+            <div class="media-banner media-banner--image-left" data-ratio="16:9">
+                <div class="media-banner__image-wrapper">
+                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
+                </div>
+                <div class="media-banner__content">
+                    <h3 class="media-banner__title">Ratio 16:9</h3>
+                    <p class="media-banner__subtitle">Widescreen cinema</p>
+                    <p class="media-banner__body">The 16:9 ratio is the standard for widescreen displays and creates a cinematic wide-angle view.</p>
+                    <button class="media-banner__button">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

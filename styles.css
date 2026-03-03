@@ -78,27 +78,8 @@ body {
     margin: 0;
 }
 
-.sidebar-nav__link {
-    display: block;
-    padding: var(--v-space-12) var(--v-space-16);
-    color: var(--color-text);
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    transition: all 0.2s ease;
-    font: var(--v-font-16);
-}
 
-.sidebar-nav__link:hover {
-    background: var(--v-color-background-primary);
-    color: var(--color-primary);
-}
 
-.sidebar-nav__link--active {
-    background: var(--v-color-background-primary);
-    color: var(--color-primary);
-    border-left-color: var(--color-primary);
-    font-weight: var(--v-font-emphasis-weight);
-}
 
 /* ===========================
    Page Container
@@ -197,6 +178,45 @@ body {
 
 .component-card__link {
     display: none;
+}
+
+/* ===========================
+   Card Detail Placeholder
+   =========================== */
+.card-detail-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: var(--v-space-16);
+    max-width: 420px;
+}
+
+.card-detail-placeholder__image {
+    position: relative;
+    overflow: hidden;
+    background: var(--v-color-background-secondary);
+    width: 100%;
+}
+
+.card-detail-placeholder__title {
+    font: var(--v-font-16);
+    font-weight: var(--v-font-emphasis-weight);
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.card-detail-placeholder__text {
+    font: var(--v-font-14);
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* ===========================
+   Page Title Styling
+   =========================== */
+.page-container h1 {
+    font: var(--v-font-heading-1);
+    color: var(--color-primary);
+    margin-bottom: var(--v-space-64);
 }
 
 /* ===========================

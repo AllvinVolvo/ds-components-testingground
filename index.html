@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Banner Component</title>
+    <title>Component Library - Overview</title>
     <link
         rel="stylesheet"
         href="https://www.volvocars.com/static/shared/pkg/css/v1/font-face.8324f4d8.css"
@@ -46,144 +46,108 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-container">
-        <!-- Responsive Banner - Image Left -->
-        <section class="demo-section">
-            <h2>Banner - Image Left (Vertical on sm, Horizontal on md+)</h2>
-            <div class="media-banner flex-col md:flex-row">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/3 md:aspect-4/3">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Amazing Discovery</h3>
-                    <p class="media-banner__subtitle">Unveiling possibilities</p>
-                    <p class="media-banner__body">Experience the future of design and development. Our innovative solutions bring your ideas to life with cutting-edge technology and creative excellence.</p>
-                    <button class="button-text">Explore Now</button>
-                </div>
+    <div class="library-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-nav">
+            <div class="sidebar-nav__header">
+                <h1 class="sidebar-nav__title">Components</h1>
             </div>
-        </section>
+            <ul class="sidebar-nav__list">
+                <li class="sidebar-nav__item">
+                    <a href="index.html" class="sidebar-nav__link sidebar-nav__link--active">Overview</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="media-banner-detail.html" class="sidebar-nav__link">Media Banner</a>
+                </li>
+            </ul>
+        </nav>
 
-        <!-- Responsive Banner - Image Right -->
-        <section class="demo-section">
-            <h2>Banner - Image Right (Vertical on sm, Horizontal on md+)</h2>
-            <div class="media-banner flex-col md:flex-row-reverse">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/3 md:aspect-4/3">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Transform Your Vision</h3>
-                    <p class="media-banner__subtitle">Create with confidence</p>
-                    <p class="media-banner__body">Build beautiful, responsive experiences that engage your audience. Our platform provides the tools and flexibility you need to create stunning digital products.</p>
-                    <button class="button-text">Get Started</button>
-                </div>
-            </div>
-        </section>
+        <!-- Main Content -->
+        <main class="library-content">
+            <div class="page-container">
+                <section class="overview-section">
+                    <h2>Component Library</h2>
+                    <p class="overview-section__description">Browse and explore our component library.</p>
 
-        <!-- Aspect Ratio Variants -->
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 4:3</h2>
-            <div class="media-banner flex-col md:flex-row">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/3 md:aspect-4/3">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 4:3</h3>
-                    <p class="media-banner__subtitle">Classic aspect ratio</p>
-                    <p class="media-banner__body">This banner uses a 4:3 aspect ratio, maintaining a balanced composition that works well for most content types.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                    <!-- Components Grid -->
+                    <div class="components-grid">
+                        <!-- Media Banner Card -->
+                        <a href="media-banner-detail.html" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Media Banner component" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Media Banner</h3>
+                            <a href="media-banner-detail.html" class="component-card__link">View Component</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 3:2</h2>
-            <div class="media-banner flex-col md:flex-row-reverse">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-3/2 md:aspect-3/2">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 3:2</h3>
-                    <p class="media-banner__subtitle">Photography standard</p>
-                    <p class="media-banner__body">The 3:2 ratio is commonly used in photography and provides a flexible composition for diverse visual content.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                        <!-- Placeholder cards for future components -->
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Button</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 1:1</h2>
-            <div class="media-banner flex-col md:flex-row">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-1/1 md:aspect-1/1">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 1:1</h3>
-                    <p class="media-banner__subtitle">Perfect square</p>
-                    <p class="media-banner__body">Square images create a sense of balance and symmetry, ideal for social media and centered compositions.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Card</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 4:5</h2>
-            <div class="media-banner flex-col md:flex-row-reverse">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/5 md:aspect-4/5">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 4:5</h3>
-                    <p class="media-banner__subtitle">Portrait oriented</p>
-                    <p class="media-banner__body">The 4:5 ratio favors vertical compositions, perfect for portraiture and mobile-first designs.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Modal</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 2:3</h2>
-            <div class="media-banner flex-col md:flex-row">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-2/3 md:aspect-2/3">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 2:3</h3>
-                    <p class="media-banner__subtitle">Enhanced portrait</p>
-                    <p class="media-banner__body">A taller portrait ratio that emphasizes vertical elements and creates a dramatic visual impact.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Input</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 9:16</h2>
-            <div class="media-banner flex-col md:flex-row-reverse">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-9/16 md:aspect-9/16">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 9:16</h3>
-                    <p class="media-banner__subtitle">Ultra-tall portrait</p>
-                    <p class="media-banner__body">The 9:16 ratio is extremely vertical, resembling smartphone screens and full-height designs.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
-            </div>
-        </section>
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Dropdown</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
 
-        <section class="demo-section">
-            <h2>Aspect Ratio Variant - 16:9</h2>
-            <div class="media-banner flex-col md:flex-row">
-                <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-16/9 md:aspect-16/9">
-                    <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
-                </div>
-                <div class="media-banner__content w-full md:w-1/2">
-                    <h3 class="media-banner__title">Ratio 16:9</h3>
-                    <p class="media-banner__subtitle">Widescreen cinema</p>
-                    <p class="media-banner__body">The 16:9 ratio is the standard for widescreen displays and creates a cinematic wide-angle view.</p>
-                    <button class="button-text">Learn More</button>
-                </div>
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Tabs</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
+
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Navbar</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
+
+                        <a href="#" class="component-card component-card--link">
+                            <div class="component-card__image-wrapper aspect-1/1">
+                                <img src="./src/test.avif" alt="Component placeholder" class="component-card__image">
+                            </div>
+                            <h3 class="component-card__title">Footer</h3>
+                            <a href="#" class="component-card__link component-card__link--disabled">Coming Soon</a>
+                        </a>
+                    </div>
+                </section>
             </div>
-        </section>
+        </main>
     </div>
 </body>
 </html>

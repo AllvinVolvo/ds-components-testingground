@@ -29,12 +29,174 @@ body {
 }
 
 /* ===========================
+   Library Container Layout
+   =========================== */
+.library-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.library-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* ===========================
+   Sidebar Navigation
+   =========================== */
+.sidebar-nav {
+    width: 280px;
+    background: var(--v-color-background-secondary);
+    border-right: 1px solid var(--color-border);
+    padding: var(--v-space-32);
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-nav__header {
+    margin-bottom: var(--v-space-32);
+}
+
+.sidebar-nav__title {
+    font: var(--v-font-heading-2);
+    color: var(--color-secondary);
+    font-size: 18px;
+    margin: 0;
+}
+
+.sidebar-nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--v-space-8);
+}
+
+.sidebar-nav__item {
+    margin: 0;
+}
+
+.sidebar-nav__link {
+    display: block;
+    padding: var(--v-space-12) var(--v-space-16);
+    color: var(--color-text);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+    font: var(--v-font-16);
+}
+
+.sidebar-nav__link:hover {
+    background: var(--v-color-background-primary);
+    color: var(--color-primary);
+}
+
+.sidebar-nav__link--active {
+    background: var(--v-color-background-primary);
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    font-weight: var(--v-font-emphasis-weight);
+}
+
+/* ===========================
    Page Container
    =========================== */
 .page-container {
     width: 100%;
     padding: var(--page-margin);
     margin: 0 auto;
+}
+
+/* ===========================
+   Overview Section
+   =========================== */
+.overview-section {
+    padding-bottom: var(--v-space-m);
+}
+
+.overview-section h2 {
+    font: var(--v-font-heading-2);
+    color: var(--color-secondary);
+    margin-bottom: var(--v-space-16);
+}
+
+.overview-section__description {
+    font: var(--v-font-16);
+    color: var(--color-text);
+    margin-bottom: var(--v-space-48);
+}
+
+/* ===========================
+   Components Grid
+   =========================== */
+.components-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gutter);
+}
+
+@media (min-width: 768px) {
+    .components-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .components-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ===========================
+   Component Card
+   =========================== */
+.component-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--v-color-background-primary);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.component-card__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: var(--v-color-background-primary);
+    width: 100%;
+}
+
+.component-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.component-card__title {
+    font: var(--v-font-16);
+    font-weight: var(--v-font-emphasis-weight);
+    color: var(--color-secondary);
+    padding: var(--v-space-24) var(--v-space-20) 0;
+    margin: 0;
+}
+
+.component-card:hover .component-card__title {
+    text-decoration: underline;
+}
+
+.component-card:hover .component-card__image {
+    transform: scale(1.2);
+}
+
+.component-card__link {
+    display: none;
 }
 
 /* ===========================

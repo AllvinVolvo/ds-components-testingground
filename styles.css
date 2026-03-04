@@ -59,34 +59,22 @@ body {
     background-color: var(--v-color-background-tertiary);
 }
 
-.topbar__hamburger-icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+.topbar__text {
+    font: var(--v-font-16);
+    font-weight: 570;
+    color: var(--v-color-foreground-primary);
 }
 
-.topbar__hamburger-icon span {
-    width: 16px;
-    height: 2px;
-    background: var(--v-color-foreground-primary);
-    border-radius: 1px;
-    transition: all 0.3s ease;
+.topbar__text--close {
+    display: none;
 }
 
-.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 2px);
+.topbar__hamburger.active .topbar__text--menu {
+    display: none;
 }
 
-.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(2) {
-    opacity: 0;
-}
-
-.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(3) {
-    transform: rotate(-45deg) translate(2px, -2px);
+.topbar__hamburger.active .topbar__text--close {
+    display: inline;
 }
 
 /* ===========================
@@ -197,8 +185,19 @@ body {
 
 @media (min-width: 64rem) {
     .components-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.components-grid > media-card {
+    display: block;
+    height: 100%;
+}
+
+.components-grid > media-card .media-card-link,
+.components-grid > media-card .media-card {
+    width: 100%;
+    height: 100%;
 }
 
 /* ===========================

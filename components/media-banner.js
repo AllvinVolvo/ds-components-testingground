@@ -10,6 +10,7 @@
  *   subtitle="Subtitle"
  *   body="Body text"
  *   variant="left"
+ *   background="primary"
  *   button-text="Learn More">
  * </media-banner>
  */
@@ -30,16 +31,22 @@ class MediaBanner extends HTMLElement {
     const subtitle = this.getAttribute('subtitle') || '';
     const body = this.getAttribute('body') || '';
     const variant = this.getAttribute('variant') || 'left';
+    const background = this.getAttribute('background') || 'primary';
     const buttonText = this.getAttribute('button-text') || 'Learn More';
 
     // Determine layout direction
     const flexDirection = variant === 'right' ? 'lg:flex-row-reverse' : 'lg:flex-row';
 
+    // Determine background color
+    const backgroundClass = background === 'secondary' 
+      ? 'bg-background-secondary' 
+      : 'bg-background-primary';
+
     // Map ratio to aspect class
     const aspectClass = this.getAspectClass(ratio);
 
     this.innerHTML = `
-      <div class="media-banner flex-col ${flexDirection}">
+      <div class="media-banner flex-col ${flexDirection} ${backgroundClass}">
         <div class="media-banner__image-wrapper w-full lg:w-1/2 ${aspectClass} lg:${aspectClass}">
           <img src="${image}" alt="Banner image" class="media-banner__image">
         </div>

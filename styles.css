@@ -31,6 +31,17 @@ body {
 }
 
 /* ===========================
+   Utility Classes
+   =========================== */
+.bg-background-primary {
+    background-color: var(--v-color-background-primary);
+}
+
+.bg-background-secondary {
+    background-color: var(--v-color-background-secondary);
+}
+
+/* ===========================
    Topbar Navigation
    =========================== */
 .topbar {
@@ -314,7 +325,6 @@ body {
    =========================== */
 .media-banner {
     width: 100%;
-    background: var(--v-color-background-secondary);
     border-radius: 0;
     overflow: hidden;
     display: flex;
@@ -324,7 +334,6 @@ body {
 .media-banner__image-wrapper {
     position: relative;
     overflow: hidden;
-    background: var(--v-color-background-secondary);
     flex-shrink: 0;
 }
 

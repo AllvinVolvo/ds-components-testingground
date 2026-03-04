@@ -44,6 +44,8 @@
         media="(hover: hover)"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="components/media-banner.js"></script>
+    <script src="components/card.js"></script>
 </head>
 <body>
     <div class="topbar">
@@ -85,20 +87,20 @@
                     <!-- Components Grid -->
                     <div class="components-grid">
                         <!-- Media Banner Card -->
-                        <a href="media-banner-detail.html" class="component-card component-card--link">
-                            <div class="component-card__image-wrapper aspect-1/1">
-                                <img src="./src/test.avif" alt="Media Banner component" class="component-card__image">
-                            </div>
-                            <h3 class="component-card__title">Media Banner</h3>
-                        </a>
+                        <design-card
+                          image="./src/1.jpg"
+                          title="Media Banner"
+                          link="media-banner-detail.html"
+                          ratio="1/1">
+                        </design-card>
 
                         <!-- Card Component -->
-                        <a href="card-detail.html" class="component-card component-card--link">
-                            <div class="component-card__image-wrapper aspect-1/1">
-                                <img src="./src/test.avif" alt="Card component" class="component-card__image">
-                            </div>
-                            <h3 class="component-card__title">Card</h3>
-                        </a>
+                        <design-card
+                          image="./src/8.jpg"
+                          title="Card"
+                          link="card-detail.html"
+                          ratio="1/1">
+                        </design-card>
                     </div>
                 </section>
             </div>

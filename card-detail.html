@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_xl.cd367963.css" data-volvo-css-name="styles_xl.css" crossorigin="anonymous" media="(min-width: 100rem)">
     <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_hover.47ab975c.css" data-volvo-css-name="styles_hover.css" crossorigin="anonymous" media="(hover: hover)">
     <link rel="stylesheet" href="styles.css">
+    <script src="components/card.js"></script>
 </head>
 <body>
     <div class="topbar">
@@ -46,13 +47,12 @@
                 <h1>Card</h1>
                 <section class="demo-section">
                     <h2>Card Component</h2>
-                    <div class="card-detail-placeholder">
-                        <div class="card-detail-placeholder__image aspect-1/1">
-                            <img src="./src/test.avif" alt="Card component placeholder" class="component-card__image">
-                        </div>
-                        <h3 class="card-detail-placeholder__title">Card</h3>
-                        <p class="card-detail-placeholder__text">This is the detail page scaffold for the Card component. We can build out variants and specs here next.</p>
-                    </div>
+                    <design-card
+                      image=\"./src/8.jpg\"
+                      title=\"Card\"
+                      text=\"A flexible card component for displaying content with image, title, and description.\"
+                      ratio=\"1/1\">
+                    </design-card>
                 </section>
             </div>
         </main>

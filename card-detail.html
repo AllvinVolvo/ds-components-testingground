@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="topbar">
+        <button id="sidebar-toggle" class="topbar__hamburger" aria-label="Toggle sidebar">
+            <div class="topbar__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+
     <div class="library-container">
         <nav class="sidebar-nav">
             <div class="sidebar-nav__header">
@@ -47,5 +57,47 @@
             </div>
         </main>
     </div>
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar-nav');
+        const SIDEBAR_STATE_KEY = 'sidebarState';
+
+        // Update icon state: hamburger when closed, cross when open
+        function updateIconState() {
+            if (sidebar.classList.contains('collapsed')) {
+                sidebarToggle.classList.remove('active'); // hamburger
+            } else {
+                sidebarToggle.classList.add('active'); // cross
+            }
+        }
+
+        // Restore sidebar state on page load
+        function restoreSidebarState() {
+            const savedState = localStorage.getItem(SIDEBAR_STATE_KEY);
+            if (savedState === 'collapsed') {
+                sidebar.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+            }
+            updateIconState();
+        }
+
+        // Save sidebar state to localStorage
+        function saveSidebarState() {
+            const isCollapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem(SIDEBAR_STATE_KEY, isCollapsed ? 'collapsed' : 'open');
+        }
+
+        // Restore state when page loads
+        restoreSidebarState();
+
+        // Toggle only on hamburger click
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            updateIconState();
+            saveSidebarState();
+        });
+    </script>
 </body>
 </html>

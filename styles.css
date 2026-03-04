@@ -26,6 +26,67 @@ body {
     color: var(--color-text);
     background-color: var(--v-color-background-primary);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================
+   Topbar Navigation
+   =========================== */
+.topbar {
+    height: 64px;
+    background: var(--v-color-background-secondary);
+    padding: var(--v-space-16);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+}
+
+.topbar__hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.topbar__hamburger:hover {
+    background-color: var(--v-color-background-tertiary);
+}
+
+.topbar__hamburger-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.topbar__hamburger-icon span {
+    width: 16px;
+    height: 2px;
+    background: var(--v-color-foreground-primary);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.topbar__hamburger.active .topbar__hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -2px);
 }
 
 /* ===========================
@@ -33,7 +94,8 @@ body {
    =========================== */
 .library-container {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
+    flex: 1;
 }
 
 .library-content {
@@ -47,13 +109,22 @@ body {
 .sidebar-nav {
     width: 280px;
     background: var(--v-color-background-secondary);
-    border-right: 1px solid var(--color-border);
-    padding: var(--v-space-32);
+    padding: var(--page-margin);
     flex-shrink: 0;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: calc(100vh - 64px);
     overflow-y: auto;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.sidebar-nav.collapsed {
+    transform: translateX(-100%);
+    position: fixed;
+    left: 0;
+    top: 64px;
+    height: calc(100vh - 64px);
+    z-index: 999;
 }
 
 .sidebar-nav__header {
@@ -118,13 +189,13 @@ body {
     gap: var(--gutter);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 30rem) {
     .components-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 64rem) {
     .components-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -263,7 +334,7 @@ body {
 
 /* Content styling */
 .media-banner__content {
-    padding: var(--v-space-32) var(--v-space-24);
+    padding: var(--v-space-24);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,8 +364,8 @@ body {
    RESPONSIVE BREAKPOINTS
    =========================== */
 
-/* sm: up to 767px */
-@media (max-width: 767px) {
+/* sm: mobile first (up to md) */
+@media (max-width: 29.9375rem) {
     .media-banner {
         flex-direction: column;
     }
@@ -305,33 +376,34 @@ body {
     }
 }
 
-/* md: 768px and up */
-@media (min-width: 768px) {
+/* md: 30rem (480px) - vertical layout */
+@media (min-width: 30rem) {
+    .media-banner__content {
+        padding: var(--v-space-32);
+    }
+}
+
+/* lg: 64rem (1024px) - horizontal layout */
+@media (min-width: 64rem) {
     .media-banner {
         align-items: flex-start;
     }
 
     .media-banner__content {
-        padding: var(--v-space-48) var(--v-space-32);
+        padding: var(--v-space-32) var(--v-space-24);
         align-self: stretch;
     }
 }
 
-/* lg: 1280px and up */
-@media (min-width: 1280px) {
-    .media-banner__content {
-        padding: var(--v-space-64) var(--v-space-48);
-    }
-
-/* xl: 1920px and up */
-@media (min-width: 1920px) {
+/* xl: 100rem (1600px) and up - larger horizontal layout */
+@media (min-width: 100rem) {
     .page-container {
-        max-width: 1920px;
+        max-width: 100rem;
         margin: 0 auto;
     }
 
     .media-banner__content {
-        padding: var(--v-space-l) var(--v-space-64);
+        padding: var(--v-space-40) var(--v-space-32);
     }
 }
 

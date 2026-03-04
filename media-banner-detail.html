@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="topbar">
+        <button id="sidebar-toggle" class="topbar__hamburger" aria-label="Toggle sidebar">
+            <div class="topbar__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+
     <div class="library-container">
         <nav class="sidebar-nav">
             <div class="sidebar-nav__header">
@@ -36,11 +46,11 @@
                 <h1>Media Banner</h1>
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 4:3</h2>
-                    <div class="media-banner flex-col md:flex-row">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/3 md:aspect-4/3">
+                    <div class="media-banner flex-col lg:flex-row">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-4/3 lg:aspect-4/3">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 4:3</h3>
                             <p class="media-banner__subtitle">Classic aspect ratio</p>
                             <p class="media-banner__body">This banner uses a 4:3 aspect ratio, maintaining a balanced composition that works well for most content types.</p>
@@ -51,11 +61,11 @@
 
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 3:2</h2>
-                    <div class="media-banner flex-col md:flex-row-reverse">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-3/2 md:aspect-3/2">
+                    <div class="media-banner flex-col lg:flex-row-reverse">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-3/2 lg:aspect-3/2">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 3:2</h3>
                             <p class="media-banner__subtitle">Photography standard</p>
                             <p class="media-banner__body">The 3:2 ratio is commonly used in photography and provides a flexible composition for diverse visual content.</p>
@@ -66,11 +76,11 @@
 
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 1:1</h2>
-                    <div class="media-banner flex-col md:flex-row">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-1/1 md:aspect-1/1">
+                    <div class="media-banner flex-col lg:flex-row">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-1/1 lg:aspect-1/1">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 1:1</h3>
                             <p class="media-banner__subtitle">Perfect square</p>
                             <p class="media-banner__body">Square images create a sense of balance and symmetry, ideal for social media and centered compositions.</p>
@@ -81,11 +91,11 @@
 
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 4:5</h2>
-                    <div class="media-banner flex-col md:flex-row-reverse">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-4/5 md:aspect-4/5">
+                    <div class="media-banner flex-col lg:flex-row-reverse">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-4/5 lg:aspect-4/5">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 4:5</h3>
                             <p class="media-banner__subtitle">Portrait oriented</p>
                             <p class="media-banner__body">The 4:5 ratio favors vertical compositions, perfect for portraiture and mobile-first designs.</p>
@@ -96,11 +106,11 @@
 
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 2:3</h2>
-                    <div class="media-banner flex-col md:flex-row">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-2/3 md:aspect-2/3">
+                    <div class="media-banner flex-col lg:flex-row">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-2/3 lg:aspect-2/3">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 2:3</h3>
                             <p class="media-banner__subtitle">Enhanced portrait</p>
                             <p class="media-banner__body">A taller portrait ratio that emphasizes vertical elements and creates a dramatic visual impact.</p>
@@ -111,11 +121,11 @@
 
                 <section class="demo-section mb-64">
                     <h2>Aspect Ratio Variant - 9:16</h2>
-                    <div class="media-banner flex-col md:flex-row-reverse">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-9/16 md:aspect-9/16">
+                    <div class="media-banner flex-col lg:flex-row-reverse">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-9/16 lg:aspect-9/16">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 9:16</h3>
                             <p class="media-banner__subtitle">Ultra-tall portrait</p>
                             <p class="media-banner__body">The 9:16 ratio is extremely vertical, resembling smartphone screens and full-height designs.</p>
@@ -126,11 +136,11 @@
 
                 <section class="demo-section">
                     <h2>Aspect Ratio Variant - 16:9</h2>
-                    <div class="media-banner flex-col md:flex-row">
-                        <div class="media-banner__image-wrapper w-full md:w-1/2 aspect-16/9 md:aspect-16/9">
+                    <div class="media-banner flex-col lg:flex-row">
+                        <div class="media-banner__image-wrapper w-full lg:w-1/2 aspect-16/9 lg:aspect-16/9">
                             <img src="./src/test.avif" alt="Banner image" class="media-banner__image">
                         </div>
-                        <div class="media-banner__content w-full md:w-1/2">
+                        <div class="media-banner__content w-full lg:w-1/2">
                             <h3 class="media-banner__title">Ratio 16:9</h3>
                             <p class="media-banner__subtitle">Widescreen cinema</p>
                             <p class="media-banner__body">The 16:9 ratio is the standard for widescreen displays and creates a cinematic wide-angle view.</p>
@@ -141,5 +151,47 @@
             </div>
         </main>
     </div>
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar-nav');
+        const SIDEBAR_STATE_KEY = 'sidebarState';
+
+        // Update icon state: hamburger when closed, cross when open
+        function updateIconState() {
+            if (sidebar.classList.contains('collapsed')) {
+                sidebarToggle.classList.remove('active'); // hamburger
+            } else {
+                sidebarToggle.classList.add('active'); // cross
+            }
+        }
+
+        // Restore sidebar state on page load
+        function restoreSidebarState() {
+            const savedState = localStorage.getItem(SIDEBAR_STATE_KEY);
+            if (savedState === 'collapsed') {
+                sidebar.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+            }
+            updateIconState();
+        }
+
+        // Save sidebar state to localStorage
+        function saveSidebarState() {
+            const isCollapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem(SIDEBAR_STATE_KEY, isCollapsed ? 'collapsed' : 'open');
+        }
+
+        // Restore state when page loads
+        restoreSidebarState();
+
+        // Toggle only on hamburger click
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            updateIconState();
+            saveSidebarState();
+        });
+    </script>
 </body>
 </html>

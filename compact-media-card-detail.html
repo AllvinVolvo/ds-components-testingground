@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Media Card</title>
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/font-face.8324f4d8.css" data-volvo-css-name="font-face.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/tokens.bf5afda4.css" data-volvo-css-name="tokens.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles.1d8be33a.css" data-volvo-css-name="styles.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_md.8c1b3d58.css" data-volvo-css-name="styles_md.css" crossorigin="anonymous" media="(min-width: 30rem)">
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_xl.cd367963.css" data-volvo-css-name="styles_xl.css" crossorigin="anonymous" media="(min-width: 100rem)">
+    <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_hover.47ab975c.css" data-volvo-css-name="styles_hover.css" crossorigin="anonymous" media="(hover: hover)">
+    <link rel="stylesheet" href="styles.css">
+    <script src="components/compact-media-card.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <button id="sidebar-toggle" class="topbar__hamburger font-16 text-primary" aria-label="Toggle sidebar">
+            <span class="topbar__text topbar__text--menu">Menu</span>
+            <span class="topbar__text topbar__text--close">Close</span>
+        </button>
+    </div>
+
+    <div class="library-container">
+        <nav class="sidebar-nav">
+            <div class="sidebar-nav__header">
+                <h1 class="sidebar-nav__title heading-2 text-primary">Components</h1>
+            </div>
+            <ul class="sidebar-nav__list">
+                <li class="sidebar-nav__item">
+                    <a href="index.html" class="font-16 text-primary">Overview</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="media-banner-detail.html" class="font-16 text-primary">Media Banner</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="card-detail.html" class="font-16 text-primary">Card</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="text-hero-detail.html" class="font-16 text-primary">Text Hero</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="compact-media-card-detail.html" class="font-16 text-primary">Compact Media Card</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="library-content">
+            <div class="page-container">
+                <h1 class="heading-1 text-primary mb-64">Compact Media Card</h1>
+                
+                <p class="font-16 text-primary mb-48">
+                  A compact clickable card component featuring an image with customizable aspect ratios, 
+                  a title, and a forward arrow icon. The entire card is interactive with hover and pressed states.
+                </p>
+
+                <h2 class="heading-2 text-primary mb-48">Variants</h2>
+
+                <section class="demo-section">
+                    <h3 class="heading-3 text-primary mb-32">Square (1:1)</h3>
+                    <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 48px;">
+                        <compact-media-card
+                            image="./src/1.jpg"
+                            aspect-ratio="1-1"
+                            title="Square Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/2.jpg"
+                            aspect-ratio="1-1"
+                            title="Another Square Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/3.jpg"
+                            aspect-ratio="1-1"
+                            title="Yet Another Card"
+                            href="#"
+                        ></compact-media-card>
+                    </div>
+                </section>
+
+                <section class="demo-section">
+                    <h3 class="heading-3 text-primary mb-32">Standard (4:3)</h3>
+                    <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 48px;">
+                        <compact-media-card
+                            image="./src/4.jpg"
+                            aspect-ratio="4-3"
+                            title="Standard Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/5.jpg"
+                            aspect-ratio="4-3"
+                            title="Another Standard Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/6.jpg"
+                            aspect-ratio="4-3"
+                            title="Yet Another Standard"
+                            href="#"
+                        ></compact-media-card>
+                    </div>
+                </section>
+
+                <section class="demo-section">
+                    <h3 class="heading-3 text-primary mb-32">Portrait (3:4)</h3>
+                    <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 48px;">
+                        <compact-media-card
+                            image="./src/7.jpg"
+                            aspect-ratio="3-4"
+                            title="Portrait Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/8.jpg"
+                            aspect-ratio="3-4"
+                            title="Another Portrait"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/9.jpg"
+                            aspect-ratio="3-4"
+                            title="Yet Another Portrait"
+                            href="#"
+                        ></compact-media-card>
+                    </div>
+                </section>
+
+                <section class="demo-section">
+                    <h3 class="heading-3 text-primary mb-32">Wide (16:9)</h3>
+                    <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 48px;">
+                        <compact-media-card
+                            image="./src/10.jpg"
+                            aspect-ratio="16-9"
+                            title="Wide Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/1.jpg"
+                            aspect-ratio="16-9"
+                            title="Another Wide Card"
+                            href="#"
+                        ></compact-media-card>
+                    </div>
+                </section>
+
+                <section class="demo-section">
+                    <h3 class="heading-3 text-primary mb-32">Ultra Wide (21:9)</h3>
+                    <div class="card-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 48px;">
+                        <compact-media-card
+                            image="./src/2.jpg"
+                            aspect-ratio="21-9"
+                            title="Ultra Wide Card"
+                            href="#"
+                        ></compact-media-card>
+                        <compact-media-card
+                            image="./src/3.jpg"
+                            aspect-ratio="21-9"
+                            title="Another Ultra Wide"
+                            href="#"
+                        ></compact-media-card>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar-nav');
+        const SIDEBAR_STATE_KEY = 'sidebarState';
+
+        // Update icon state: hamburger when closed, cross when open
+        function updateIconState() {
+            if (sidebar.classList.contains('collapsed')) {
+                sidebarToggle.classList.remove('active'); // hamburger
+            } else {
+                sidebarToggle.classList.add('active'); // cross
+            }
+        }
+
+        // Restore sidebar state on page load
+        function restoreSidebarState() {
+            const savedState = localStorage.getItem(SIDEBAR_STATE_KEY);
+            if (savedState === 'collapsed') {
+                sidebar.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+            }
+            updateIconState();
+        }
+
+        // Save sidebar state to localStorage
+        function saveSidebarState() {
+            const isCollapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem(SIDEBAR_STATE_KEY, isCollapsed ? 'collapsed' : 'open');
+        }
+
+        // Restore state when page loads
+        restoreSidebarState();
+
+        // Toggle only on hamburger click
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            updateIconState();
+            saveSidebarState();
+        });
+    </script>
+</body>
+</html>

@@ -29,7 +29,7 @@ class TextHero extends HTMLElement {
 
     const ctaMarkup = ctaType === 'button-group'
       ? `
-        <div class="button-group justify-start">
+        <div class="button-group justify-start w-full">
           <button class="button-outlined px-24 py-12">${ctaSecondaryText}</button>
           <button class="button-filled px-24 py-12">${ctaPrimaryText}</button>
         </div>
@@ -39,18 +39,18 @@ class TextHero extends HTMLElement {
         : '';
 
     this.innerHTML = `
-      <div class="aspect-21/9 bg-background-secondary flex-col justify-between items-start py-48 px-24">
+      <div class="aspect-21/9 bg-background-secondary flex-col justify-between items-start py-24 px-24">
         ${hasCta
           ? `
             <div class="flex-col items-start">
-              <h1 class="statement-1 text-primary m-0">${title}</h1>
-              <p class="statement-3 text-secondary m-0 mt-48">${subtitle}</p>
+              <h1 class="statement-1 text-primary">${title}</h1>
+              <p class="statement-3 text-secondary">${subtitle}</p>
             </div>
             ${ctaMarkup}
           `
           : `
-            <h1 class="statement-1 text-primary m-0">${title}</h1>
-            <p class="statement-3 text-secondary m-0">${subtitle}</p>
+            <h1 class="statement-1 text-primary">${title}</h1>
+            <p class="statement-3 text-secondary">${subtitle}</p>
           `
         }
       </div>

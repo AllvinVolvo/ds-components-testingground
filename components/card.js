@@ -61,9 +61,9 @@ class MediaCard extends HTMLElement {
           <img src="${image}" alt="${title}" class="media-card__image">
         </div>
         <div class="media-card__content">
-          <h3 class="media-card__title">${title}</h3>
-          ${subtitle ? `<p class="media-card__subtitle">${subtitle}</p>` : ''}
-          ${body ? `<p class="media-card__body">${body}</p>` : ''}
+          <h3 class="media-card__title font-20 font-medium text-primary">${title}</h3>
+          ${subtitle ? `<p class="media-card__subtitle font-16 text-primary">${subtitle}</p>` : ''}
+          ${body ? `<p class="media-card__body font-12 text-secondary">${body}</p>` : ''}
           <button class="button-text">${buttonText}</button>
         </div>
       </div>

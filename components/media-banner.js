@@ -51,9 +51,9 @@ class MediaBanner extends HTMLElement {
           <img src="${image}" alt="Banner image" class="media-banner__image">
         </div>
         <div class="media-banner__content w-full lg:w-1/2">
-          <h3 class="media-banner__title">${title}</h3>
-          <p class="media-banner__subtitle">${subtitle}</p>
-          <p class="media-banner__body">${body}</p>
+          <h3 class="media-banner__title heading-2 text-primary">${title}</h3>
+          <p class="media-banner__subtitle font-16 font-medium text-primary">${subtitle}</p>
+          <p class="media-banner__body font-16 text-secondary">${body}</p>
           <button class="button-text">${buttonText}</button>
         </div>
       </div>

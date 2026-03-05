@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://www.volvocars.com/static/shared/pkg/css/v1/styles_hover.47ab975c.css" data-volvo-css-name="styles_hover.css" crossorigin="anonymous" media="(hover: hover)">
     <link rel="stylesheet" href="styles.css">
     <script src="components/media-banner.js"></script>
+    <script src="components/text-hero.js"></script>
 </head>
 <body>
     <div class="topbar">
-        <button id="sidebar-toggle" class="topbar__hamburger" aria-label="Toggle sidebar">
+        <button id="sidebar-toggle" class="topbar__hamburger font-16 text-primary" aria-label="Toggle sidebar">
             <span class="topbar__text topbar__text--menu">Menu</span>
             <span class="topbar__text topbar__text--close">Close</span>
         </button>
@@ -24,28 +25,33 @@
     <div class="library-container">
         <nav class="sidebar-nav">
             <div class="sidebar-nav__header">
-                <h1 class="sidebar-nav__title">Components</h1>
+                <h1 class="sidebar-nav__title heading-2 text-primary">Components</h1>
             </div>
             <ul class="sidebar-nav__list">
                 <li class="sidebar-nav__item">
-                    <a href="index.html" class="link-plain font-16">Overview</a>
+                    <a href="index.html" class="font-16 text-primary">Overview</a>
                 </li>
                 <li class="sidebar-nav__item">
-                    <a href="media-banner-detail.html" class="link-plain font-16">Media Banner</a>
+                    <a href="media-banner-detail.html" class="font-16 text-primary">Media Banner</a>
                 </li>
                 <li class="sidebar-nav__item">
-                    <a href="card-detail.html" class="link-plain font-16">Card</a>
+                    <a href="card-detail.html" class="font-16 text-primary">Card</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="text-hero-detail.html" class="font-16 text-primary">Text Hero</a>
                 </li>
             </ul>
         </nav>
 
         <main class="library-content">
             <div class="page-container">
-                <h1>Media Banner</h1>
+                <h1 class="heading-1 text-primary mb-64">Media Banner</h1>
+                <p class="font-16 text-primary mb-48">A responsive image-and-text banner with configurable aspect ratios, layout direction, and background tone.</p>
+                <h2 class="heading-2 text-primary mb-48">Variants</h2>
                 
                 <section class="demo-section mb-64">
-                    <h2>Primary Background</h2>
-                    <h3>Aspect Ratio - 4:3</h3>
+                    <h2 class="heading-2 text-primary mb-48">Primary Background</h2>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 4:3</h3>
                     <media-banner 
                       image="./src/1.jpg"
                       ratio="4:3"
@@ -59,7 +65,7 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h3>Aspect Ratio - 3:2</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 3:2</h3>
                     <media-banner 
                       image="./src/2.jpg"
                       ratio="3:2"
@@ -73,7 +79,7 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h3>Aspect Ratio - 1:1</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 1:1</h3>
                     <media-banner 
                       image="./src/3.jpg"
                       ratio="1:1"
@@ -87,7 +93,7 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h3>Aspect Ratio - 16:9</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 16:9</h3>
                     <media-banner 
                       image="./src/4.jpg"
                       ratio="16:9"
@@ -101,8 +107,8 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h2>Secondary Background</h2>
-                    <h3>Aspect Ratio - 4:3</h3>
+                    <h2 class="heading-2 text-primary mb-48">Secondary Background</h2>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 4:3</h3>
                     <media-banner 
                       image="./src/5.jpg"
                       ratio="4:3"
@@ -116,7 +122,7 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h3>Aspect Ratio - 3:2</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 3:2</h3>
                     <media-banner 
                       image="./src/6.jpg"
                       ratio="3:2"
@@ -130,7 +136,7 @@
                 </section>
 
                 <section class="demo-section mb-64">
-                    <h3>Aspect Ratio - 4:5</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 4:5</h3>
                     <media-banner 
                       image="./src/7.jpg"
                       ratio="4:5"
@@ -144,7 +150,7 @@
                 </section>
 
                 <section class="demo-section">
-                    <h3>Aspect Ratio - 2:3</h3>
+                    <h3 class="heading-3 text-primary">Aspect Ratio - 2:3</h3>
                     <media-banner 
                       image="./src/8.jpg"
                       ratio="2:3"

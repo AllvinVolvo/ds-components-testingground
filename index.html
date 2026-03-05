@@ -46,10 +46,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="components/media-banner.js"></script>
     <script src="components/card.js"></script>
+    <script src="components/text-hero.js"></script>
 </head>
 <body>
     <div class="topbar">
-        <button id="sidebar-toggle" class="topbar__hamburger" aria-label="Toggle sidebar">
+        <button id="sidebar-toggle" class="topbar__hamburger font-16 text-primary" aria-label="Toggle sidebar">
             <span class="topbar__text topbar__text--menu">Menu</span>
             <span class="topbar__text topbar__text--close">Close</span>
         </button>
@@ -59,17 +60,20 @@
         <!-- Sidebar Navigation -->
         <nav class="sidebar-nav">
             <div class="sidebar-nav__header">
-                <h1 class="sidebar-nav__title">Components</h1>
+                <h1 class="sidebar-nav__title heading-2 text-primary">Components</h1>
             </div>
             <ul class="sidebar-nav__list">
                 <li class="sidebar-nav__item">
-                    <a href="index.html" class="link-plain font-16">Overview</a>
+                    <a href="index.html" class="font-16 text-primary">Overview</a>
                 </li>
                 <li class="sidebar-nav__item">
-                    <a href="media-banner-detail.html" class="link-plain font-16">Media Banner</a>
+                    <a href="media-banner-detail.html" class="font-16 text-primary">Media Banner</a>
                 </li>
                 <li class="sidebar-nav__item">
-                    <a href="card-detail.html" class="link-plain font-16">Card</a>
+                    <a href="card-detail.html" class="font-16 text-primary">Card</a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="text-hero-detail.html" class="font-16 text-primary">Text Hero</a>
                 </li>
             </ul>
         </nav>
@@ -78,8 +82,8 @@
         <main class="library-content">
             <div class="page-container">
                 <section class="overview-section">
-                    <h2>Component Library</h2>
-                    <p class="overview-section__description">Browse and explore our component library.</p>
+                    <h2 class="heading-2 text-primary mb-48">Component Library</h2>
+                    <p class="overview-section__description font-16 text-secondary">Browse and explore our component library.</p>
 
                     <!-- Components Grid -->
                     <div class="components-grid">
@@ -106,6 +110,18 @@
                           ratio="4:3"
                           variant="primary">
                         </media-card>
+
+                                                <!-- Text Hero Component -->
+                                                <media-card
+                                                    image="./src/4.jpg"
+                                                    title="Text Hero"
+                                                    subtitle="Typography-led hero"
+                                                    body="Full-bleed text layout with optional CTAs."
+                                                    button-text="View Component"
+                                                    link="text-hero-detail.html"
+                                                    ratio="4:3"
+                                                    variant="primary">
+                                                </media-card>
                     </div>
                 </section>
             </div>

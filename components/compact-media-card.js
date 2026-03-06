@@ -37,7 +37,7 @@ class CompactMediaCard extends HTMLElement {
     this.innerHTML = `
       <a 
         href="${href}" 
-        class="flex flex-col bg-background-secondary hover:bg-background-primary active:bg-background-primary transition-colors no-underline"
+        class="compact-media-card__link flex flex-col bg-background-secondary transition-colors no-underline"
         style="display: flex; text-decoration: none;"
       >
         <div class="${aspectClass} w-full overflow-hidden">

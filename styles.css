@@ -468,3 +468,14 @@ body {
     }
 }
 
+/* ===========================
+   Compact Media Card Styles
+   =========================== */
+.compact-media-card__link:hover {
+    background-color: var(--v-color-state-primary-subtle);
+}
+
+.compact-media-card__link:active {
+    background-color: var(--v-color-state-primary-strong);
+}
+
